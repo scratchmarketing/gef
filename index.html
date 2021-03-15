@@ -26,9 +26,9 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px #e91e79">IMG</td>
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px solid #4d4d4d">IMG</td>
             <td width="39">&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+            <td width="551.94" height="478" align="center" style="border: 3px solid #e91e79">
                 <table>
                     <tr>
                         <td align="center">
@@ -43,7 +43,7 @@
                 </table>
             </td>
             <td width="39">&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px solid #e91e79">
                 <table>
                     <tr>
                         <td align="center">
@@ -70,7 +70,7 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+            <td width="551.94" height="478" align="center" style="border: 3px solid #4d4d4d">
                 <table>
                     <tr>
                         <td align="center">
@@ -85,7 +85,7 @@
                 </table>
             </td>
             <td>&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px">
+            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px solid #e91e79">
                 <table>
                     <tr>
                         <td align="center">
@@ -100,7 +100,7 @@
                 </table>
             </td>
             <td>&nbsp;</td>
-            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px">
+            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px solid #e91e79">
                 <table>
                     <tr>
                         <td align="center">
@@ -122,18 +122,21 @@
     </table>
     
     <form>
-        box 1<input type="text" id="input1Dose">
+        Total First Doses Administered Today &nbsp;<input type="text" id="input1Dose"><br>
+        Total Second Doses Administered Today &nbsp;<input type="text" id="input2Dose"><br>
+        Todays Total Doses &nbsp;<input type="text" id="inputTotalDose"><br>
+        Cumulative First Doses &nbsp;<input type="text" id="inputcum1Dose"><br>
+        Cumulative Second  Doses &nbsp;<input type="text" id="inputcum2Dose"><br>
     </form>
-    
-    <button onClick="update()">Update</button>
-    
+        <button onClick="update()">Update</button>
+
     <script>
         function update(){
             document.getElementById("TotalFirstDoses").innerHTML = document.getElementById("input1Dose").value;
-            document.getElementById("TotalSecondDoses").innerHTML = document.getElementById("input1Dose").value;
-            document.getElementById("TodaysDoses").innerHTML = document.getElementById("input1Dose").value;
-            document.getElementById("cumTotalFirstDoses").innerHTML = document.getElementById("input1Dose").value;
-            document.getElementById("cumTotalSecondDoses").innerHTML = document.getElementById("input1Dose").value;
+            document.getElementById("TotalSecondDoses").innerHTML = document.getElementById("input2Dose").value;
+            document.getElementById("TodaysDoses").innerHTML = document.getElementById("inputTotalDose").value;
+            document.getElementById("cumTotalFirstDoses").innerHTML = document.getElementById("inputcum1Dose").value;
+            document.getElementById("cumTotalSecondDoses").innerHTML = document.getElementById("inputcum2Dose").value;
             
         }
     </script>
