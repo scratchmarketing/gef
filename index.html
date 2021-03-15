@@ -20,18 +20,110 @@
 </head>
 
 <body>
-    <table width="2000" cellpadding="0" cellspacing="0"><tr><td colspan="7" align="center" height="136px;">&nbsp;</td></tr>
-    <tr><td>&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px #e91e79">IMG</td><td width="39">&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px"><table><tr><td align="center"><h1 id="TotalFirstDoses">717</h1></td></tr><tr><td align="center"><h2>Total first doses administered today</h2></td></tr></table></td><td width="39">&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px"><table><tr><td align="center"><h1 id="TotalSecondDoses">0</h1></td></tr><tr>
-      <td align="center"><h2>Total second doses administered today</h2></td></tr></table></td><td width="133">&nbsp;</td></tr>
-    <tr><td width="133">&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px"><table><tr><td align="center"><h1 id="TodaysDoses">717</h1></td></tr><tr><td align="center"><h2>CUMULATIVE TOTAL
-FIRST DOSES</h2></td></tr></table></td><td>&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px"><table><tr><td align="center"><h1 id="cumTotalFirstDoses">21,431</h1></td></tr><tr><td align="center"><h2>CUMULATIVE TOTAL
-FIRST DOSES</h2></td></tr></table></td><td>&nbsp;</td><td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px"><table><tr><td align="center"><h1 id="cumTotalSecondDoses">11,369</h1></td></tr><tr><td align="center"><h2>CUMULATIVE TOTAL
-SECOND DOSES</h2></td></tr></table></td><td>&nbsp;</td></tr>
-    <tr><td colspan="7" align="center" height="136px;">&nbsp;</td></tr></table>
-    <form>
-        box 1<input type="text" id="input1Dose"><button onClick="update()">Update</button></form>
+    <table width="2000" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="7" align="center" height="136px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px #e91e79">IMG</td>
+            <td width="39">&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h1 id="TotalFirstDoses">717</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h2>Total first doses administered today</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="39">&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h1 id="TotalSecondDoses">0</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h2>Total second doses administered today</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="133">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="133">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#e91e79" style="border: 3px">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h1 id="TodaysDoses">717</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h2>CUMULATIVE TOTAL FIRST DOSES</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h1 id="cumTotalFirstDoses">21,431</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h2>CUMULATIVE TOTAL FIRST DOSES</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;</td>
+            <td width="551.94" height="478" align="center" bordercolor="#959595" style="border: 3px">
+                <table>
+                    <tr>
+                        <td align="center">
+                            <h1 id="cumTotalSecondDoses">11,369</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h2>CUMULATIVE TOTAL SECOND DOSES</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="7" align="center" height="136px;">&nbsp;</td>
+        </tr>
+    </table>
     
+    <form>
+        box 1<input type="text" id="input1Dose"><button onClick="update()">Update</button>
+    </form>
     
     <script>
         function update(){
